@@ -3,6 +3,11 @@ Teamcity build agent based on sjoerdmulder/teamcity-agent-docker
 - removed node.js and ruby stuff
 - added docker-compose
 
+Launch:
+```
+docker run -d --name=teamcity-agent-1 --privileged -e TEAMCITY_SERVER=http://teamcity:8111 e96tech/teamcity-agent-docker:latest
+```
+
 original readme below:
 
 Teamcity build agent
