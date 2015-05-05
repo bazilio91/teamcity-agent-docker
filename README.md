@@ -1,3 +1,10 @@
+Teamcity build agent based on sjoerdmulder/teamcity-agent-docker
+
+- removed node.js and ruby stuff
+- added docker-compose
+
+original readme below:
+
 Teamcity build agent
 ========================
 
