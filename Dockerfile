@@ -1,6 +1,6 @@
 FROM sjoerdmulder/java8
 
-RUN apt-get update && apt-get install -y unzip iptables lxc build-essential fontconfig apt-transport-https
+RUN apt-get update && apt-get install -y unzip iptables lxc build-essential fontconfig apt-transport-https git-core
 
 # This will use the 1.6.0 release
 RUN echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list
