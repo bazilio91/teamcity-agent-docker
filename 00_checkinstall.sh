@@ -14,4 +14,8 @@ if [ ! -d "$AGENT_DIR" ]; then
     echo "workDir=/data/work" >> $AGENT_DIR/conf/buildAgent.properties
     echo "tempDir=/data/temp" >> $AGENT_DIR/conf/buildAgent.properties
     echo "systemDir=/data/system" >> $AGENT_DIR/conf/buildAgent.properties
+
+    if [ ! -z "$TEAMCITY_OWN_ADDRESS" ]; then
+        echo "ownAddress=$TEAMCITY_OWN_ADDRESS" >> $AGENT_DIR/conf/buildAgent.properties
+    fi
 fi
